@@ -1,0 +1,11 @@
+networkx
+numpy
+scipy
+matplotlib
+ipython
+jupyter
+notebook
+pandas
+ipykernel
+tqdm
+seaborn

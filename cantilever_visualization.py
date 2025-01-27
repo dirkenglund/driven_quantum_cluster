@@ -264,6 +264,18 @@ def animate_phase_space_with_beam(color_centers, config):
         repeat=True
     )
     
+    print("Saving animation as GIF...")
+    ani.save('quantum_cluster_animation.gif', 
+             writer='pillow', 
+             fps=10)
+    
+    print("Saving animation as MP4...")
+    ani.save('quantum_cluster_animation.mp4', 
+             writer='ffmpeg', 
+             fps=10, 
+             dpi=300,  # Higher resolution
+             bitrate=2000)  # Better quality
+    
     return fig, ani
 
 def main():
